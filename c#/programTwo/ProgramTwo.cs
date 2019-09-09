@@ -18,6 +18,7 @@ namespace ProgramTwo
             Console.WriteLine("User 2 (Admin):");
             Console.WriteLine("Name: {0}", user2.getName());
             Console.WriteLine("Email: {0}", user2.getEmail());
+            Console.WriteLine("Password: {0}", user2.getPassword());
 
             Console.Read();
         }
