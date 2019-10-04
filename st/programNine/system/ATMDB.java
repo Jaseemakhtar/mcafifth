@@ -1,4 +1,4 @@
-package atm;
+package logic;
 
 public class ATMDB {
     String cardNo;

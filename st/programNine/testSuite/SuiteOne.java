@@ -1,11 +1,11 @@
-package testSuite1;
+package testSuite;
 
-import atm.ATMSystem;
-import org.testng.*;
+import logic.ATMSystem;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
+public class SuiteOne {
 
-public class TestSuite {
     private ATMSystem atmSystem;
 
     @BeforeClass
@@ -30,19 +30,18 @@ public class TestSuite {
         for(int i = 0; i < 3; i++){
             int randomPassword = (int) Math.floor(Math.random() * 10 + 1000);
             test = atmSystem.insertCard("5106 8075 6508 8287", "" + randomPassword);
-            System.out.println(randomPassword);
         }
         Assert.assertTrue(test);
     }
 
     @Test(priority = 3)
     public void selectLanguage(){
-
+        Assert.assertEquals(atmSystem.selectLanguage(1), "english");
     }
 
     @Test(priority = 4)
     public void selectAccountType(){
-
+        Assert.assertEquals(atmSystem.selectAccountType(2), "savings");
     }
 
     @AfterClass

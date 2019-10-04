@@ -1,6 +1,7 @@
-package atm;
+package logic;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Calendar;
 
 public class ATMSystem {
 
@@ -25,16 +26,16 @@ public class ATMSystem {
     public boolean insertCard(String cardNo, String password){
         for(int i = 0; i < atmdbs.size(); i++){
 
-            ATMDB singleRow = atmdbs.get(i);
+            ATMDB row = atmdbs.get(i);
 
-            if(singleRow.cardNo.equals(cardNo)){
+            if(row.cardNo.equals(cardNo)){
                 println("Card Inserted!");
 
-                if(singleRow.password.equals(password)){
+                if(row.password.equals(password)){
 
                     println("User authenticated.");
                     int year = calendar.get(Calendar.YEAR);
-                    if(singleRow.expiryDate < year){
+                    if(row.expiryDate < year){
                         println("Card has expired!");
                         return false;
                     }
@@ -56,10 +57,13 @@ public class ATMSystem {
         println("1. English");
         println("2. Hindi");
         println("Enter your choice.");
+
         switch (choice){
             case 1:
+                println("English selected.");
                 return "english";
             case 2:
+                println("Hindi selected.");
                 return "hindi";
 
             default:
