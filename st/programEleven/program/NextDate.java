@@ -1,7 +1,7 @@
 package program;
 
 public class NextDate {
-    int nDay, nMonth, nYear;
+    int nDay;
     int nextDay, nextMonth, nextYear;
 
     public String generateNextDate(int d, int m, int y){
