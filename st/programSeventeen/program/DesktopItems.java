@@ -18,13 +18,14 @@ public class DesktopItems {
             System.out.println("Files present in Desktop: ");
 
             for (int i = 0; i < files.length; i++) {
-                System.out.println(i + 1 + ". " + files[i].getName());
-            }
+                if(!files[i].getName().contains(".ini")){
+                    items++;
+                    System.out.println(items + ". " + files[i].getName());
+                }
 
-            items = files.length;
+            }
             System.out.println("\nTotal items on Desktop: " + items);
-        }
-        catch (Exception e) {
+        }catch (Exception e) {
             System.err.println(e.getMessage());
         }
 

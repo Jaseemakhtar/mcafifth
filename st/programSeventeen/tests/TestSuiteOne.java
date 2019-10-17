@@ -16,6 +16,6 @@ public class TestSuiteOne {
     @Test
     public void test(){
         int items = desktopItems.countItems();
-        Assert.assertEquals(items, 4);
+        Assert.assertEquals(items, 3);
     }
 }
