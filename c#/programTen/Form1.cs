@@ -28,12 +28,18 @@ namespace ProgramTen
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txtName.Text;
-            string password = txtPass.Text;
+            string username = txtName.Text.Trim();
+            string password = txtPass.Text.Trim();
+
+            if (username.Equals("") || password.Equals(""))
+            {
+                MessageBox.Show("Fields cannot be empty!");
+                return;
+            }
 
             for (int i = 0; i < rows; i++)
             {
-                if (names[i].Equals(username.Trim()) && passs[i].Equals(password.Trim()))
+                if (names[i].Equals(username) && passs[i].Equals(password))
                 {
                     MessageBox.Show("Login Successfull!");
                     return;
