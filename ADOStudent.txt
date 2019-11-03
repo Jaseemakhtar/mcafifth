@@ -51,7 +51,7 @@ namespace DataReader
         static void Main(string[] args)
         {
             studaccesslayer uAL = new studaccesslayer();            
-            if(users.Count == 0)
+            if(stud.Count == 0)
                 Console.WriteLine("No Data Fetched.");
             else
                 Console.WriteLine("Data Fetched.");
