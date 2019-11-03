@@ -27,7 +27,7 @@ namespace DataReader
     class studaccesslayer {
         
 
-        public void displayallstudent() {
+        public List<student> displayallstudent() {
             
             string ConString = @"Data Source=.\SQLEXPRESS;Initial Catalog=TestDB;Integrated Security=True";
             SqlConnection con = new SqlConnection(ConString);
@@ -36,7 +36,7 @@ namespace DataReader
             SqlCommand cmd = new SqlCommand(querystring, con);
             SqlDataReader reader = cmd.ExecuteReader();
 
-            List<student> studlist;
+            List<student> studlist = new List<>();
             while (reader.Read())
                 {       
                     student stud = new student;
@@ -46,6 +46,7 @@ namespace DataReader
 
                     stud.Add(student);
                 }
+		return studlist;
         }
     
     }
@@ -54,7 +55,8 @@ namespace DataReader
     {
         static void Main(string[] args)
         {
-            studaccesslayer uAL = new studaccesslayer();            
+            studaccesslayer uAL = new studaccesslayer();   
+		List<student> studlist = uAL.displayallstudent();
             if(stud.Count == 0)
                 Console.WriteLine("No Data Fetched.");
             else
