@@ -28,12 +28,15 @@ namespace DataReader
         
 
         public void displayallstudent() {
+            
             string ConString = @"Data Source=.\SQLEXPRESS;Initial Catalog=TestDB;Integrated Security=True";
             SqlConnection con = new SqlConnection(ConString);
             string querystring = "Select * from Student";
             con.Open();
             SqlCommand cmd = new SqlCommand(querystring, con);
             SqlDataReader reader = cmd.ExecuteReader();
+
+            List<student> studlist;
             while (reader.Read())
                 {       
                     student stud = new student;
