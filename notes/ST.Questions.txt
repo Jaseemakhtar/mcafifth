@@ -1,0 +1,20 @@
+1. Define Software Validation & Software Verification.
+2. Error, Fault & Failure.
+3. Test, Test Case & Test Suite with examples.
+4. Life Cycle Models.
+5. Level of ST.
+6. Pseudocode algorithm for validate pin & get pin procedure based on SATSM of SATM system.
+7. Thread - specification definition & its possibilities.
+8. Structural & Functional stratergies for Testing thread.
+9. Client-Server Testing.
+10. Issues of object oriented testing.
+11. Modeling with basic conceptualization for ST.
+12. Top-down & Bottom-up Integration Testing. Commercial tools support for model-based testing.
+13. Best practices of ST.
+14. Compare & Contrast MDD versus TDD.
+15. Cal-graph based integeration & path-based integration testing.
+16. UML support for integration testing.
+17. Levels of object oriented testing.
+18. Currency Converter UML description.
+19. Implementation of composition and encapsulation Inheritance & polymorphism.
+20. Discuss Triangle problem, SATM problem. 
