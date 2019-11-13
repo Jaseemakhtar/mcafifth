@@ -8,3 +8,5 @@
 -Chrome Web Driver Linux [Chrome-Driver-78.0.3904.70](https://chromedriver.storage.googleapis.com/78.0.3904.70/chromedriver_linux64.zip "Download")
 
 -Chrome Web Driver Windows [Chrome-Driver-78.0.3904.70](https://chromedriver.storage.googleapis.com/78.0.3904.70/chromedriver_win32.zip "Download")
+
+-Apache POI [POI-4.1.1-20191023](http://apachemirror.wuchna.com/poi/release/bin/poi-bin-4.1.1-20191023.zip "Download")
