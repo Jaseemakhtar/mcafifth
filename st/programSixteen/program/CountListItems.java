@@ -24,8 +24,7 @@ public class CountListItems {
             webDriver.get("file:///home/jaseem/IdeaProjects/SeleniumListItems/src/program/Demo.html");
             System.out.println("Browser Opened!");
             List<WebElement> webElements = webDriver.findElements(By.cssSelector("#car-list > option"));
-            for (WebElement w :
-                    webElements) {
+            for (WebElement w : webElements) {
                 System.out.println("Item: " +w.getText());
             }
             System.out.println("Found List Items: " + webElements.size());
