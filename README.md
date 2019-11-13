@@ -5,6 +5,6 @@
 
 -Selenium used [Selenium-Java-3.141.59](https://selenium-release.storage.googleapis.com/3.141/selenium-java-3.141.59.zip "Download")
 
--Chrome Web Driver Linux[Chrome-Driver-78.0.3904.70](https://chromedriver.storage.googleapis.com/78.0.3904.70/chromedriver_linux64.zip "Download")
+-Chrome Web Driver Linux [Chrome-Driver-78.0.3904.70](https://chromedriver.storage.googleapis.com/78.0.3904.70/chromedriver_linux64.zip "Download")
 
--Chrome Web Driver Windows[Chrome-Driver-78.0.3904.70](https://chromedriver.storage.googleapis.com/78.0.3904.70/chromedriver_win32.zip "Download")
+-Chrome Web Driver Windows [Chrome-Driver-78.0.3904.70](https://chromedriver.storage.googleapis.com/78.0.3904.70/chromedriver_win32.zip "Download")
